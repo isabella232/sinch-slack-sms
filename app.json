@@ -1,0 +1,8 @@
+{
+  "name": "Sinch Slack SMS",
+  "description": "A barebones Slack app that makes use of the Sinch SMS API",
+  "repository": "https://github.com/sinch/sinch-slack-sms",
+  "logo": "https://raw.githubusercontent.com/sinch/sinch-slack-sms/master/img/sinch.jpg",
+  "keywords": ["slack", "sms", "api"],
+  "addons": []
+}
