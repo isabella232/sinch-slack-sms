@@ -8,15 +8,15 @@ $text = $_POST['text'];
 $pieces = explode(" ", $text, 2);
 
 //Sinch API Details
-$key = "your_app_key";    
-$secret = "your_app_secret"; 
+$key = "1372b3ad-a8cb-4363-a02f-969a378db24a";    
+$secret = "1gSzmH8Q0ECtwNzEuDb1wQ=="; 
 
 //Query
 $phone_number = $pieces[0];
 $user = "application\\" . $key . ":" . $secret;    
 $message = array("message"=> $pieces[1]);    
 $data = json_encode($message);    
-$ch = curl_init('https://messagingapi.sinch.com/v1/sms/' . $phone_number);    
+$ch = curl_init('https://api.sinch.com/messaging/v1/sms' . $phone_number);    
 curl_setopt($ch, CURLOPT_POST, true);    
 curl_setopt($ch, CURLOPT_USERPWD,$user);    
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data);    
