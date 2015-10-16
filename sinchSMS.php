@@ -16,7 +16,7 @@ $phone_number = $pieces[0];
 $user = "application\\" . $key . ":" . $secret;    
 $message = array("message"=> $pieces[1]);    
 $data = json_encode($message);    
-$ch = curl_init('https://api.sinch.com/messaging/v1/sms' . $phone_number);    
+$ch = curl_init('https://api.sinch.com/messaging/v1/sms/' . $phone_number);    
 curl_setopt($ch, CURLOPT_POST, true);    
 curl_setopt($ch, CURLOPT_USERPWD,$user);    
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data);    
