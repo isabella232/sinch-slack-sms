@@ -8,8 +8,8 @@ $text = $_POST['text'];
 $pieces = explode(" ", $text, 2);
 
 //Sinch API Details
-$key = "1372b3ad-a8cb-4363-a02f-969a378db24a";    
-$secret = "1gSzmH8Q0ECtwNzEuDb1wQ=="; 
+$key = "your_app_key";    
+$secret = "your_app_secret"; 
 
 //Query
 $phone_number = $pieces[0];
